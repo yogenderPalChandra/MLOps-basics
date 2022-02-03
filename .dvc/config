@@ -1,6 +1,4 @@
 [core]
-    remote = s3http
+    remote = model-store
 ['remote "model-store"']
-    url = https://lakeformation-demo-yogender.s3.eu-central-1.amazonaws.com/MLOps/
-['remote "s3http"']
-    url = https://lakeformation-demo-yogender.s3.eu-central-1.amazonaws.com/MLOps/
+    url = s3://lakeformation-demo-yogender/MLOps/
