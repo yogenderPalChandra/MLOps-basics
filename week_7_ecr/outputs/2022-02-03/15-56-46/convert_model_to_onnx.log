@@ -1,0 +1,4 @@
+[2022-02-03 15:56:46,961][__main__][INFO] - Loading pre-trained model from: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_7_ecr/models/best-checkpoint.ckpt
+[2022-02-03 15:56:52,028][datasets.builder][WARNING] - Reusing dataset glue (/home/yogender/.cache/huggingface/datasets/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+[2022-02-03 15:56:52,596][__main__][INFO] - Converting the model into ONNX format
+[2022-02-03 15:56:52,892][__main__][INFO] - Model converted successfully. ONNX format model is at: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_7_ecr/models/model.onnx

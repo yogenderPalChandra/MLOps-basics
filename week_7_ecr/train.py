@@ -13,6 +13,10 @@ from pytorch_lightning.loggers import WandbLogger
 from data import DataModule
 from model import ColaModel
 
+import wandb
+
+wandb.init(project="yogi", entity="yogender")
+
 logger = logging.getLogger(__name__)
 
 
@@ -65,7 +69,7 @@ def main(cfg):
         monitor="valid/loss", patience=3, verbose=True, mode="min"
     )
 
-    wandb_logger = WandbLogger(project="MLOps Basics", entity="raviraja")
+    wandb_logger = WandbLogger(project="yogi", entity="yogender")
     trainer = pl.Trainer(
         max_epochs=cfg.training.max_epochs,
         logger=wandb_logger,
