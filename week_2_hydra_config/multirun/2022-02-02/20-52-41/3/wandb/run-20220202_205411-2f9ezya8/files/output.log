@@ -1,0 +1,34 @@
+
+Epoch 0:   1%| | 1/75 [00:00<00:13,  5.31it/s, loss=0.65, v_num=zya8, valid/loss_epoch=0.649, valid/acc=0.688, valid/precision_macro=0.344, valid/recall
+  | Name                   | Type                          | Params
+-------------------------------------------------------------------------
+0 | bert                   | BertForSequenceClassification | 4.4 M
+1 | train_accuracy_metric  | Accuracy                      | 0
+2 | val_accuracy_metric    | Accuracy                      | 0
+3 | f1_metric              | F1                            | 0
+4 | precision_macro_metric | Precision                     | 0
+5 | recall_macro_metric    | Recall                        | 0
+6 | precision_micro_metric | Precision                     | 0
+7 | recall_micro_metric    | Recall                        | 0
+-------------------------------------------------------------------------
+4.4 M     Trainable params
+0         Non-trainable params
+4.4 M     Total params
+17.545    Total estimated model params size (MB)
+/home/yogender/miniconda3/envs/MLOps/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:68: UserWarning: The dataloader, val dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 8 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  warnings.warn(*args, **kwargs)
+/home/yogender/miniconda3/envs/MLOps/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:68: UserWarning: The dataloader, train dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 8 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+
+
+
+
+Epoch 0:  97%|▉| 73/75 [00:11<00:00,  6.52it/s, loss=0.624, v_num=zya8, valid/loss_epoch=0.649, valid/acc=0.688, valid/precision_macro=0.344, valid/reca
+
+
+
+
+
+Epoch 1:  96%|▉| 72/75 [00:11<00:00,  6.32it/s, loss=0.611, v_num=zya8, valid/loss_epoch=0.646, valid/acc=0.656, valid/precision_macro=0.328, valid/reca
+
+Validating:  50%|████████████████████████████████████████████████████▌                                                    | 4/8 [00:00<00:00, 12.80it/s]

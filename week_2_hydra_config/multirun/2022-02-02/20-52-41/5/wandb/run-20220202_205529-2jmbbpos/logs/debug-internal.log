@@ -1,0 +1,331 @@
+2022-02-02 20:55:29,799 INFO    MainThread:15167 [internal.py:wandb_internal():89] W&B internal server running at pid: 15167, started at: 2022-02-02 20:55:29.798941
+2022-02-02 20:55:29,803 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: check_version
+2022-02-02 20:55:29,803 DEBUG   SenderThread:15167 [sender.py:send():235] send: header
+2022-02-02 20:55:29,804 INFO    WriterThread:15167 [datastore.py:open_for_write():77] open: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/run-2jmbbpos.wandb
+2022-02-02 20:55:29,805 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: check_version
+2022-02-02 20:55:29,858 DEBUG   SenderThread:15167 [sender.py:send():235] send: run
+2022-02-02 20:55:29,860 INFO    SenderThread:15167 [sender.py:_maybe_setup_resume():489] checking resume status for yogender/yogi/2jmbbpos
+2022-02-02 20:55:30,265 INFO    SenderThread:15167 [dir_watcher.py:__init__():169] watching files in: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files
+2022-02-02 20:55:30,265 INFO    SenderThread:15167 [sender.py:_start_run_threads():809] run started: 2jmbbpos with start time 1643831729
+2022-02-02 20:55:30,265 DEBUG   SenderThread:15167 [sender.py:send():235] send: summary
+2022-02-02 20:55:30,265 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-02 20:55:30,267 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: run_start
+2022-02-02 20:55:30,268 DEBUG   HandlerThread:15167 [meta.py:__init__():36] meta init
+2022-02-02 20:55:30,268 DEBUG   HandlerThread:15167 [meta.py:__init__():50] meta init done
+2022-02-02 20:55:30,268 DEBUG   HandlerThread:15167 [meta.py:probe():210] probe
+2022-02-02 20:55:30,270 DEBUG   HandlerThread:15167 [meta.py:_setup_git():200] setup git
+2022-02-02 20:55:30,278 DEBUG   HandlerThread:15167 [meta.py:_setup_git():207] setup git done
+2022-02-02 20:55:30,279 DEBUG   HandlerThread:15167 [meta.py:_save_pip():54] save pip
+2022-02-02 20:55:30,279 DEBUG   HandlerThread:15167 [meta.py:_save_pip():68] save pip done
+2022-02-02 20:55:30,279 DEBUG   HandlerThread:15167 [meta.py:_save_conda():75] save conda
+2022-02-02 20:55:30,281 ERROR   HandlerThread:15167 [meta.py:_save_conda():84] Error saving conda packages
+Traceback (most recent call last):
+  File "/home/yogender/miniconda3/envs/MLOps/lib/python3.8/site-packages/wandb/sdk/internal/meta.py", line 80, in _save_conda
+    subprocess.call(
+  File "/home/yogender/miniconda3/envs/MLOps/lib/python3.8/subprocess.py", line 340, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/home/yogender/miniconda3/envs/MLOps/lib/python3.8/subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/yogender/miniconda3/envs/MLOps/lib/python3.8/subprocess.py", line 1704, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2022-02-02 20:55:30,282 DEBUG   HandlerThread:15167 [meta.py:_save_conda():85] save conda done
+2022-02-02 20:55:30,282 DEBUG   HandlerThread:15167 [meta.py:probe():248] probe done
+2022-02-02 20:55:30,330 DEBUG   SenderThread:15167 [sender.py:send():235] send: files
+2022-02-02 20:55:30,330 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file wandb-metadata.json with policy now
+2022-02-02 20:55:30,335 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-02 20:55:30,335 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: stop_status
+2022-02-02 20:55:30,572 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:30,572 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:30,572 WARNING SenderThread:15167 [sender.py:send_metric():902] Seen metric with glob (shouldnt happen)
+2022-02-02 20:55:30,573 DEBUG   SenderThread:15167 [sender.py:send():235] send: config
+2022-02-02 20:55:31,081 INFO    Thread-11 :15167 [upload_job.py:push():137] Uploaded file /tmp/tmp14hr8_iqwandb/m92y63ve-wandb-metadata.json
+2022-02-02 20:55:31,091 DEBUG   SenderThread:15167 [sender.py:send():235] send: config
+2022-02-02 20:55:31,272 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_created():217] file/dir created: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/output.log
+2022-02-02 20:55:31,272 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_created():217] file/dir created: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/conda-environment.yaml
+2022-02-02 20:55:31,273 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_created():217] file/dir created: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/wandb-metadata.json
+2022-02-02 20:55:31,273 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_created():217] file/dir created: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/wandb-summary.json
+2022-02-02 20:55:31,274 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_created():217] file/dir created: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/requirements.txt
+2022-02-02 20:55:31,395 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: log_artifact
+2022-02-02 20:55:31,396 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: log_artifact
+2022-02-02 20:55:32,266 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_created():217] file/dir created: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/media/table/conf_table_0_53e8eba8db34a3d4f73a.table.json
+2022-02-02 20:55:32,267 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_created():217] file/dir created: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/media
+2022-02-02 20:55:32,267 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_created():217] file/dir created: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/media/table
+2022-02-02 20:55:32,277 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: log_artifact
+2022-02-02 20:55:32,666 INFO    Thread-13 :15167 [upload_job.py:push():95] Uploaded file /home/yogender/.cache/wandb/artifacts/obj/md5/15/daa7e5cbc369e726a4e0d51d7eb489
+2022-02-02 20:55:33,267 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/output.log
+2022-02-02 20:55:33,267 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_created():217] file/dir created: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/media/table/examples_1_9a8cd2feb553b6be337f.table.json
+2022-02-02 20:55:33,268 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/media/table
+2022-02-02 20:55:33,834 INFO    SenderThread:15167 [sender.py:send_request_log_artifact():973] logged artifact run-2jmbbpos-conf_table - {'id': 'QXJ0aWZhY3Q6NzM2MDQ2OTU=', 'digest': 'ed5106caa273a5aec06b916b68b4e9e7', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEwODI1NzM4', 'latestArtifact': None}, 'version': 'latest'}
+2022-02-02 20:55:33,835 DEBUG   SenderThread:15167 [sender.py:send():235] send: files
+2022-02-02 20:55:33,835 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file media/table/conf_table_0_53e8eba8db34a3d4f73a.table.json with policy now
+2022-02-02 20:55:33,836 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:33,836 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:33,836 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:33,836 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:33,836 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:33,837 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:33,837 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:33,837 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:33,837 DEBUG   SenderThread:15167 [sender.py:send():235] send: history
+2022-02-02 20:55:33,837 DEBUG   SenderThread:15167 [sender.py:send():235] send: summary
+2022-02-02 20:55:33,838 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-02 20:55:33,838 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: log_artifact
+2022-02-02 20:55:34,267 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/wandb-summary.json
+2022-02-02 20:55:34,565 INFO    Thread-14 :15167 [upload_job.py:push():137] Uploaded file /tmp/tmp14hr8_iqwandb/y87y6kze-media/table/conf_table_0_53e8eba8db34a3d4f73a.table.json
+2022-02-02 20:55:35,178 INFO    Thread-16 :15167 [upload_job.py:push():95] Uploaded file /home/yogender/.cache/wandb/artifacts/obj/md5/b7/116a2d94cab9dd15015f26a5f7ccfb
+2022-02-02 20:55:35,268 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/output.log
+2022-02-02 20:55:36,304 INFO    SenderThread:15167 [sender.py:send_request_log_artifact():973] logged artifact run-2jmbbpos-examples - {'id': 'QXJ0aWZhY3Q6NzM2MDQ3MTk=', 'digest': 'a72da519a8c39ba36be676a412ba1f2b', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEwODI1NzQw', 'latestArtifact': None}, 'version': 'latest'}
+2022-02-02 20:55:36,304 DEBUG   SenderThread:15167 [sender.py:send():235] send: files
+2022-02-02 20:55:36,304 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file media/table/examples_1_9a8cd2feb553b6be337f.table.json with policy now
+2022-02-02 20:55:36,305 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:36,305 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:36,305 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:36,305 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:36,305 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:36,306 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:36,306 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:36,306 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:36,306 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:36,306 DEBUG   SenderThread:15167 [sender.py:send():235] send: history
+2022-02-02 20:55:36,306 DEBUG   SenderThread:15167 [sender.py:send():235] send: summary
+2022-02-02 20:55:36,309 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-02 20:55:37,112 INFO    Thread-17 :15167 [upload_job.py:push():137] Uploaded file /tmp/tmp14hr8_iqwandb/2qbbvurh-media/table/examples_1_9a8cd2feb553b6be337f.table.json
+2022-02-02 20:55:37,269 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/wandb-summary.json
+2022-02-02 20:55:37,269 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/output.log
+2022-02-02 20:55:38,418 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:38,418 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:38,418 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:38,419 DEBUG   SenderThread:15167 [sender.py:send():235] send: history
+2022-02-02 20:55:38,419 DEBUG   SenderThread:15167 [sender.py:send():235] send: summary
+2022-02-02 20:55:38,419 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-02 20:55:39,270 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/wandb-summary.json
+2022-02-02 20:55:39,270 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/output.log
+2022-02-02 20:55:41,271 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/output.log
+2022-02-02 20:55:41,745 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:41,746 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:41,746 DEBUG   SenderThread:15167 [sender.py:send():235] send: history
+2022-02-02 20:55:41,746 DEBUG   SenderThread:15167 [sender.py:send():235] send: summary
+2022-02-02 20:55:41,747 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-02 20:55:42,033 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:42,033 DEBUG   SenderThread:15167 [sender.py:send():235] send: history
+2022-02-02 20:55:42,034 DEBUG   SenderThread:15167 [sender.py:send():235] send: summary
+2022-02-02 20:55:42,034 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-02 20:55:42,271 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/wandb-summary.json
+2022-02-02 20:55:42,309 DEBUG   SenderThread:15167 [sender.py:send():235] send: history
+2022-02-02 20:55:42,309 DEBUG   SenderThread:15167 [sender.py:send():235] send: summary
+2022-02-02 20:55:42,309 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-02 20:55:42,463 DEBUG   SenderThread:15167 [sender.py:send():235] send: config
+2022-02-02 20:55:42,917 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: log_artifact
+2022-02-02 20:55:42,917 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: log_artifact
+2022-02-02 20:55:43,273 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/wandb-summary.json
+2022-02-02 20:55:43,274 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/output.log
+2022-02-02 20:55:43,274 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_created():217] file/dir created: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/media/table/conf_table_6_53e8eba8db34a3d4f73a.table.json
+2022-02-02 20:55:43,275 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/media/table
+2022-02-02 20:55:43,374 INFO    SenderThread:15167 [sender.py:send_request_log_artifact():973] logged artifact run-2jmbbpos-conf_table - {'id': 'QXJ0aWZhY3Q6NzM2MDQ2OTU=', 'digest': 'ed5106caa273a5aec06b916b68b4e9e7', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'run-2jmbbpos-conf_table', 'alias': 'latest'}, {'artifactCollectionName': 'run-2jmbbpos-conf_table', 'alias': 'v0'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEwODI1NzM4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzM2MDQ2OTU=', 'versionIndex': 0}}, 'version': 'v0'}
+2022-02-02 20:55:43,374 DEBUG   SenderThread:15167 [sender.py:send():235] send: files
+2022-02-02 20:55:43,374 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file media/table/conf_table_6_53e8eba8db34a3d4f73a.table.json with policy now
+2022-02-02 20:55:43,376 DEBUG   SenderThread:15167 [sender.py:send():235] send: history
+2022-02-02 20:55:43,376 DEBUG   SenderThread:15167 [sender.py:send():235] send: summary
+2022-02-02 20:55:43,377 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-02 20:55:43,891 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: log_artifact
+2022-02-02 20:55:43,891 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: log_artifact
+2022-02-02 20:55:44,027 INFO    Thread-18 :15167 [upload_job.py:push():137] Uploaded file /tmp/tmp14hr8_iqwandb/2x3hoqfc-media/table/conf_table_6_53e8eba8db34a3d4f73a.table.json
+2022-02-02 20:55:44,274 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/wandb-summary.json
+2022-02-02 20:55:44,275 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_created():217] file/dir created: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/media/table/examples_7_9a8cd2feb553b6be337f.table.json
+2022-02-02 20:55:44,275 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/media/table
+2022-02-02 20:55:44,310 INFO    SenderThread:15167 [sender.py:send_request_log_artifact():973] logged artifact run-2jmbbpos-examples - {'id': 'QXJ0aWZhY3Q6NzM2MDQ3MTk=', 'digest': 'a72da519a8c39ba36be676a412ba1f2b', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'run-2jmbbpos-examples', 'alias': 'latest'}, {'artifactCollectionName': 'run-2jmbbpos-examples', 'alias': 'v0'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEwODI1NzQw', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzM2MDQ3MTk=', 'versionIndex': 0}}, 'version': 'v0'}
+2022-02-02 20:55:44,311 DEBUG   SenderThread:15167 [sender.py:send():235] send: files
+2022-02-02 20:55:44,311 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file media/table/examples_7_9a8cd2feb553b6be337f.table.json with policy now
+2022-02-02 20:55:44,314 DEBUG   SenderThread:15167 [sender.py:send():235] send: history
+2022-02-02 20:55:44,315 DEBUG   SenderThread:15167 [sender.py:send():235] send: summary
+2022-02-02 20:55:44,320 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-02 20:55:44,436 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:44,436 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:44,436 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:44,436 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:44,436 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:44,436 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:44,436 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:44,437 DEBUG   SenderThread:15167 [sender.py:send():235] send: history
+2022-02-02 20:55:44,437 DEBUG   SenderThread:15167 [sender.py:send():235] send: summary
+2022-02-02 20:55:44,437 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-02 20:55:45,009 INFO    Thread-19 :15167 [upload_job.py:push():137] Uploaded file /tmp/tmp14hr8_iqwandb/i81gmbkl-media/table/examples_7_9a8cd2feb553b6be337f.table.json
+2022-02-02 20:55:45,274 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/wandb-summary.json
+2022-02-02 20:55:45,275 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/output.log
+2022-02-02 20:55:45,573 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-02 20:55:45,574 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: stop_status
+2022-02-02 20:55:47,173 DEBUG   SenderThread:15167 [sender.py:send():235] send: history
+2022-02-02 20:55:47,174 DEBUG   SenderThread:15167 [sender.py:send():235] send: summary
+2022-02-02 20:55:47,174 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-02 20:55:47,275 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/wandb-summary.json
+2022-02-02 20:55:47,276 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/output.log
+2022-02-02 20:55:49,277 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/output.log
+2022-02-02 20:55:51,278 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/output.log
+2022-02-02 20:55:52,727 DEBUG   SenderThread:15167 [sender.py:send():235] send: history
+2022-02-02 20:55:52,727 DEBUG   SenderThread:15167 [sender.py:send():235] send: summary
+2022-02-02 20:55:52,728 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-02 20:55:53,279 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/wandb-summary.json
+2022-02-02 20:55:53,279 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/output.log
+2022-02-02 20:55:53,864 DEBUG   SenderThread:15167 [sender.py:send():235] send: history
+2022-02-02 20:55:53,864 DEBUG   SenderThread:15167 [sender.py:send():235] send: summary
+2022-02-02 20:55:53,865 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-02 20:55:54,160 DEBUG   SenderThread:15167 [sender.py:send():235] send: metric
+2022-02-02 20:55:54,160 DEBUG   SenderThread:15167 [sender.py:send():235] send: history
+2022-02-02 20:55:54,160 DEBUG   SenderThread:15167 [sender.py:send():235] send: summary
+2022-02-02 20:55:54,161 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-02 20:55:54,279 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/wandb-summary.json
+2022-02-02 20:55:54,449 DEBUG   SenderThread:15167 [sender.py:send():235] send: history
+2022-02-02 20:55:54,449 DEBUG   SenderThread:15167 [sender.py:send():235] send: summary
+2022-02-02 20:55:54,449 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-02 20:55:54,601 DEBUG   SenderThread:15167 [sender.py:send():235] send: config
+2022-02-02 20:55:54,947 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: log_artifact
+2022-02-02 20:55:54,948 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: log_artifact
+2022-02-02 20:55:55,281 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/wandb-summary.json
+2022-02-02 20:55:55,282 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/output.log
+2022-02-02 20:55:55,282 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_created():217] file/dir created: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/media/table/conf_table_14_53e8eba8db34a3d4f73a.table.json
+2022-02-02 20:55:55,283 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/media/table
+2022-02-02 20:55:55,358 INFO    SenderThread:15167 [sender.py:send_request_log_artifact():973] logged artifact run-2jmbbpos-conf_table - {'id': 'QXJ0aWZhY3Q6NzM2MDQ2OTU=', 'digest': 'ed5106caa273a5aec06b916b68b4e9e7', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'run-2jmbbpos-conf_table', 'alias': 'latest'}, {'artifactCollectionName': 'run-2jmbbpos-conf_table', 'alias': 'v0'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEwODI1NzM4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzM2MDQ2OTU=', 'versionIndex': 0}}, 'version': 'v0'}
+2022-02-02 20:55:55,359 DEBUG   SenderThread:15167 [sender.py:send():235] send: files
+2022-02-02 20:55:55,359 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file media/table/conf_table_14_53e8eba8db34a3d4f73a.table.json with policy now
+2022-02-02 20:55:55,363 DEBUG   SenderThread:15167 [sender.py:send():235] send: history
+2022-02-02 20:55:55,364 DEBUG   SenderThread:15167 [sender.py:send():235] send: summary
+2022-02-02 20:55:55,366 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-02 20:55:55,869 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: log_artifact
+2022-02-02 20:55:55,870 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: log_artifact
+2022-02-02 20:55:56,070 INFO    Thread-20 :15167 [upload_job.py:push():137] Uploaded file /tmp/tmp14hr8_iqwandb/xuntb5jp-media/table/conf_table_14_53e8eba8db34a3d4f73a.table.json
+2022-02-02 20:55:56,283 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/wandb-summary.json
+2022-02-02 20:55:56,283 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_created():217] file/dir created: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/media/table/examples_15_9a8cd2feb553b6be337f.table.json
+2022-02-02 20:55:56,284 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/media/table
+2022-02-02 20:55:56,379 INFO    SenderThread:15167 [sender.py:send_request_log_artifact():973] logged artifact run-2jmbbpos-examples - {'id': 'QXJ0aWZhY3Q6NzM2MDQ3MTk=', 'digest': 'a72da519a8c39ba36be676a412ba1f2b', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'run-2jmbbpos-examples', 'alias': 'latest'}, {'artifactCollectionName': 'run-2jmbbpos-examples', 'alias': 'v0'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEwODI1NzQw', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzM2MDQ3MTk=', 'versionIndex': 0}}, 'version': 'v0'}
+2022-02-02 20:55:56,379 DEBUG   SenderThread:15167 [sender.py:send():235] send: files
+2022-02-02 20:55:56,379 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file media/table/examples_15_9a8cd2feb553b6be337f.table.json with policy now
+2022-02-02 20:55:56,384 DEBUG   SenderThread:15167 [sender.py:send():235] send: history
+2022-02-02 20:55:56,385 DEBUG   SenderThread:15167 [sender.py:send():235] send: summary
+2022-02-02 20:55:56,387 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-02 20:55:56,404 DEBUG   SenderThread:15167 [sender.py:send():235] send: history
+2022-02-02 20:55:56,406 DEBUG   SenderThread:15167 [sender.py:send():235] send: summary
+2022-02-02 20:55:56,408 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-02 20:55:57,284 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/wandb-summary.json
+2022-02-02 20:55:57,285 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/output.log
+2022-02-02 20:55:57,607 INFO    Thread-21 :15167 [upload_job.py:push():137] Uploaded file /tmp/tmp14hr8_iqwandb/1awodxw1-media/table/examples_15_9a8cd2feb553b6be337f.table.json
+2022-02-02 20:55:58,285 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/output.log
+2022-02-02 20:55:58,386 DEBUG   SenderThread:15167 [sender.py:send():235] send: stats
+2022-02-02 20:55:58,914 DEBUG   SenderThread:15167 [sender.py:send():235] send: telemetry
+2022-02-02 20:55:58,915 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-02 20:55:58,916 DEBUG   SenderThread:15167 [sender.py:send():235] send: exit
+2022-02-02 20:55:58,917 INFO    SenderThread:15167 [sender.py:send_exit():371] handling exit code: 0
+2022-02-02 20:55:58,917 INFO    SenderThread:15167 [sender.py:send_exit():373] handling runtime: 28
+2022-02-02 20:55:58,920 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-02 20:55:58,920 INFO    SenderThread:15167 [sender.py:send_exit():379] send defer
+2022-02-02 20:55:58,920 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: poll_exit
+2022-02-02 20:55:58,921 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: defer
+2022-02-02 20:55:58,921 INFO    HandlerThread:15167 [handler.py:handle_request_defer():154] handle defer: 0
+2022-02-02 20:55:58,921 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: defer
+2022-02-02 20:55:58,921 INFO    SenderThread:15167 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-02-02 20:55:58,921 INFO    SenderThread:15167 [sender.py:transition_state():392] send defer: 1
+2022-02-02 20:55:58,922 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: defer
+2022-02-02 20:55:58,922 INFO    HandlerThread:15167 [handler.py:handle_request_defer():154] handle defer: 1
+2022-02-02 20:55:58,992 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: defer
+2022-02-02 20:55:58,992 INFO    SenderThread:15167 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-02-02 20:55:58,993 INFO    SenderThread:15167 [sender.py:transition_state():392] send defer: 2
+2022-02-02 20:55:58,993 DEBUG   SenderThread:15167 [sender.py:send():235] send: stats
+2022-02-02 20:55:58,995 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: defer
+2022-02-02 20:55:58,995 INFO    HandlerThread:15167 [handler.py:handle_request_defer():154] handle defer: 2
+2022-02-02 20:55:58,995 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: defer
+2022-02-02 20:55:58,996 INFO    SenderThread:15167 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-02-02 20:55:58,996 INFO    SenderThread:15167 [sender.py:transition_state():392] send defer: 3
+2022-02-02 20:55:58,997 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: defer
+2022-02-02 20:55:58,997 INFO    HandlerThread:15167 [handler.py:handle_request_defer():154] handle defer: 3
+2022-02-02 20:55:58,998 DEBUG   SenderThread:15167 [sender.py:send():235] send: summary
+2022-02-02 20:55:59,000 INFO    SenderThread:15167 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-02 20:55:59,000 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: defer
+2022-02-02 20:55:59,001 INFO    SenderThread:15167 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-02-02 20:55:59,001 INFO    SenderThread:15167 [sender.py:transition_state():392] send defer: 4
+2022-02-02 20:55:59,002 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: defer
+2022-02-02 20:55:59,002 INFO    HandlerThread:15167 [handler.py:handle_request_defer():154] handle defer: 4
+2022-02-02 20:55:59,003 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: defer
+2022-02-02 20:55:59,003 INFO    SenderThread:15167 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-02-02 20:55:59,022 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-02 20:55:59,276 INFO    SenderThread:15167 [sender.py:transition_state():392] send defer: 5
+2022-02-02 20:55:59,277 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: poll_exit
+2022-02-02 20:55:59,278 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: defer
+2022-02-02 20:55:59,278 INFO    HandlerThread:15167 [handler.py:handle_request_defer():154] handle defer: 5
+2022-02-02 20:55:59,278 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: defer
+2022-02-02 20:55:59,278 INFO    SenderThread:15167 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-02-02 20:55:59,279 INFO    SenderThread:15167 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-02-02 20:55:59,285 INFO    Thread-8  :15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/output.log
+2022-02-02 20:55:59,286 INFO    SenderThread:15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/wandb-summary.json
+2022-02-02 20:55:59,286 INFO    SenderThread:15167 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/config.yaml
+2022-02-02 20:55:59,286 INFO    SenderThread:15167 [dir_watcher.py:finish():313] scan: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files
+2022-02-02 20:55:59,287 INFO    SenderThread:15167 [dir_watcher.py:finish():327] scan save: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/output.log output.log
+2022-02-02 20:55:59,287 INFO    SenderThread:15167 [dir_watcher.py:finish():327] scan save: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/requirements.txt requirements.txt
+2022-02-02 20:55:59,290 INFO    SenderThread:15167 [dir_watcher.py:finish():327] scan save: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/conda-environment.yaml conda-environment.yaml
+2022-02-02 20:55:59,295 INFO    SenderThread:15167 [dir_watcher.py:finish():327] scan save: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/wandb-metadata.json wandb-metadata.json
+2022-02-02 20:55:59,295 INFO    SenderThread:15167 [dir_watcher.py:finish():327] scan save: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/wandb-summary.json wandb-summary.json
+2022-02-02 20:55:59,295 INFO    SenderThread:15167 [dir_watcher.py:finish():327] scan save: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/config.yaml config.yaml
+2022-02-02 20:55:59,303 INFO    SenderThread:15167 [dir_watcher.py:finish():327] scan save: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/media/table/conf_table_14_53e8eba8db34a3d4f73a.table.json media/table/conf_table_14_53e8eba8db34a3d4f73a.table.json
+2022-02-02 20:55:59,303 INFO    SenderThread:15167 [dir_watcher.py:finish():327] scan save: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/media/table/examples_1_9a8cd2feb553b6be337f.table.json media/table/examples_1_9a8cd2feb553b6be337f.table.json
+2022-02-02 20:55:59,304 INFO    SenderThread:15167 [dir_watcher.py:finish():327] scan save: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/media/table/conf_table_6_53e8eba8db34a3d4f73a.table.json media/table/conf_table_6_53e8eba8db34a3d4f73a.table.json
+2022-02-02 20:55:59,304 INFO    SenderThread:15167 [dir_watcher.py:finish():327] scan save: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/media/table/conf_table_0_53e8eba8db34a3d4f73a.table.json media/table/conf_table_0_53e8eba8db34a3d4f73a.table.json
+2022-02-02 20:55:59,304 INFO    SenderThread:15167 [dir_watcher.py:finish():327] scan save: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/media/table/examples_7_9a8cd2feb553b6be337f.table.json media/table/examples_7_9a8cd2feb553b6be337f.table.json
+2022-02-02 20:55:59,304 INFO    SenderThread:15167 [dir_watcher.py:finish():327] scan save: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/media/table/examples_15_9a8cd2feb553b6be337f.table.json media/table/examples_15_9a8cd2feb553b6be337f.table.json
+2022-02-02 20:55:59,304 INFO    SenderThread:15167 [sender.py:transition_state():392] send defer: 6
+2022-02-02 20:55:59,305 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: defer
+2022-02-02 20:55:59,305 INFO    HandlerThread:15167 [handler.py:handle_request_defer():154] handle defer: 6
+2022-02-02 20:55:59,305 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: defer
+2022-02-02 20:55:59,305 INFO    SenderThread:15167 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-02-02 20:55:59,305 INFO    SenderThread:15167 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-02 20:55:59,379 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-02 20:55:59,380 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: poll_exit
+2022-02-02 20:55:59,483 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-02 20:55:59,483 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: poll_exit
+2022-02-02 20:55:59,586 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-02 20:55:59,587 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: poll_exit
+2022-02-02 20:55:59,689 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-02 20:55:59,690 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: poll_exit
+2022-02-02 20:55:59,793 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-02 20:55:59,793 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: poll_exit
+2022-02-02 20:55:59,896 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-02 20:55:59,897 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: poll_exit
+2022-02-02 20:55:59,936 INFO    Thread-22 :15167 [upload_job.py:push():137] Uploaded file /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/output.log
+2022-02-02 20:56:00,001 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-02 20:56:00,001 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: poll_exit
+2022-02-02 20:56:00,007 INFO    Thread-25 :15167 [upload_job.py:push():137] Uploaded file /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/config.yaml
+2022-02-02 20:56:00,019 INFO    Thread-24 :15167 [upload_job.py:push():137] Uploaded file /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/wandb-summary.json
+2022-02-02 20:56:00,022 INFO    Thread-23 :15167 [upload_job.py:push():137] Uploaded file /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/files/requirements.txt
+2022-02-02 20:56:00,106 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-02 20:56:00,106 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: poll_exit
+2022-02-02 20:56:00,211 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-02 20:56:00,211 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: poll_exit
+2022-02-02 20:56:00,224 INFO    Thread-7  :15167 [sender.py:transition_state():392] send defer: 7
+2022-02-02 20:56:00,226 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: defer
+2022-02-02 20:56:00,226 INFO    HandlerThread:15167 [handler.py:handle_request_defer():154] handle defer: 7
+2022-02-02 20:56:00,227 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: defer
+2022-02-02 20:56:00,227 INFO    SenderThread:15167 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-02-02 20:56:00,315 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-02 20:56:00,881 INFO    SenderThread:15167 [sender.py:transition_state():392] send defer: 8
+2022-02-02 20:56:00,881 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: poll_exit
+2022-02-02 20:56:00,883 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: defer
+2022-02-02 20:56:00,883 INFO    HandlerThread:15167 [handler.py:handle_request_defer():154] handle defer: 8
+2022-02-02 20:56:00,883 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: defer
+2022-02-02 20:56:00,884 INFO    SenderThread:15167 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-02-02 20:56:00,884 INFO    SenderThread:15167 [sender.py:transition_state():392] send defer: 9
+2022-02-02 20:56:00,885 DEBUG   SenderThread:15167 [sender.py:send():235] send: final
+2022-02-02 20:56:00,886 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: defer
+2022-02-02 20:56:00,886 DEBUG   SenderThread:15167 [sender.py:send():235] send: footer
+2022-02-02 20:56:00,887 INFO    HandlerThread:15167 [handler.py:handle_request_defer():154] handle defer: 9
+2022-02-02 20:56:00,887 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: defer
+2022-02-02 20:56:00,887 INFO    SenderThread:15167 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-02-02 20:56:00,985 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-02 20:56:00,986 DEBUG   SenderThread:15167 [sender.py:send_request():249] send_request: poll_exit
+2022-02-02 20:56:00,987 INFO    SenderThread:15167 [file_pusher.py:join():182] waiting for file pusher
+2022-02-02 20:56:01,194 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: get_summary
+2022-02-02 20:56:01,198 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: sampled_history
+2022-02-02 20:56:01,201 DEBUG   HandlerThread:15167 [handler.py:handle_request():131] handle_request: shutdown
+2022-02-02 20:56:01,202 INFO    HandlerThread:15167 [handler.py:finish():739] shutting down handler
+2022-02-02 20:56:01,887 INFO    WriterThread:15167 [datastore.py:close():281] close: /home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics/week_2_hydra_config/multirun/2022-02-02/20-52-41/5/wandb/run-20220202_205529-2jmbbpos/run-2jmbbpos.wandb
+2022-02-02 20:56:02,192 INFO    SenderThread:15167 [sender.py:finish():1075] shutting down sender
+2022-02-02 20:56:02,192 INFO    SenderThread:15167 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-02 20:56:02,192 INFO    SenderThread:15167 [file_pusher.py:join():182] waiting for file pusher
+2022-02-02 20:56:02,194 INFO    MainThread:15167 [internal.py:handle_exit():79] Internal process exited

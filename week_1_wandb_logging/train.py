@@ -9,7 +9,9 @@ from pytorch_lightning.loggers import WandbLogger
 from data import DataModule
 from model import ColaModel
 
+import wandb
 
+wandb.init(project="yogi", entity="yogender")
 class SamplesVisualisationLogger(pl.Callback):
     def __init__(self, datamodule):
         super().__init__()
@@ -52,7 +54,7 @@ def main():
         monitor="valid/loss", patience=3, verbose=True, mode="min"
     )
 
-    wandb_logger = WandbLogger(project="MLOps Basics", entity="raviraja")
+    wandb_logger = WandbLogger(project="yogi", entity="yogender")
     trainer = pl.Trainer(
         max_epochs=1,
         logger=wandb_logger,

@@ -1,0 +1,53 @@
+[[36m2022-02-02 20:48:05,482[39m][[35mHYDRA[39m] Launching 2 jobs locally
+[[36m2022-02-02 20:48:05,482[39m][[35mHYDRA[39m] 	#0 : training.max_epochs=1
+[[36m2022-02-02 20:48:05,607[39m][[34m__main__[39m][[32mINFO[39m] - model:
+  name: google/bert_uncased_L-2_H-128_A-2
+  tokenizer: google/bert_uncased_L-2_H-128_A-2
+processing:
+  batch_size: 64
+  max_length: 128
+training:
+  max_epochs: 1
+  log_every_n_steps: 10
+  deterministic: true
+  limit_train_batches: 0.25
+  limit_val_batches: 0.25
+[[36m2022-02-02 20:48:05,607[39m][[34m__main__[39m][[32mINFO[39m] - Using the model: google/bert_uncased_L-2_H-128_A-2
+[[36m2022-02-02 20:48:05,608[39m][[34m__main__[39m][[32mINFO[39m] - Using the tokenizer: google/bert_uncased_L-2_H-128_A-2
+Some weights of the model checkpoint at google/bert_uncased_L-2_H-128_A-2 were not used when initializing BertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.predictions.decoder.bias', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at google/bert_uncased_L-2_H-128_A-2 and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+  0%|                                                                                                                             | 0/9 [00:00<?, ?ba/s]
+[[36m2022-02-02 20:48:10,511[39m][[34mdatasets.builder[39m][[33mWARNING[39m] - Reusing dataset glue (/home/yogender/.cache/huggingface/datasets/glue/cola/1.0.0/dacbe3125aa31d7f70367a07a8a9e72a5a0bfeb5fc42e75c9db75b96da6053ad)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [00:00<00:00, 32.45ba/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 47.37ba/s]
+  | Name                   | Type                          | Params
+-------------------------------------------------------------------------
+0 | bert                   | BertForSequenceClassification | 4.4 M
+1 | train_accuracy_metric  | Accuracy                      | 0
+2 | val_accuracy_metric    | Accuracy                      | 0
+3 | f1_metric              | F1                            | 0
+4 | precision_macro_metric | Precision                     | 0
+5 | recall_macro_metric    | Recall                        | 0
+6 | precision_micro_metric | Precision                     | 0
+7 | recall_micro_metric    | Recall                        | 0
+-------------------------------------------------------------------------
+4.4 M     Trainable params
+0         Non-trainable params
+4.4 M     Total params
+17.545    Total estimated model params size (MB)
+/home/yogender/miniconda3/envs/MLOps/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:68: UserWarning: The dataloader, val dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 8 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  warnings.warn(*args, **kwargs)
+Validation sanity check: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00,  6.68it/s]
+/home/yogender/miniconda3/envs/MLOps/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:68: UserWarning: The dataloader, train dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 8 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+
+
+
+Epoch 0: 100%|█| 37/37 [00:09<00:00,  3.74it/s, loss=0.614, v_num=lzfj, valid/loss_epoch=0.672, valid/acc=0.641, valid/precision_macro=0.323, valid/reca
+
+Validating:  75%|██████████████████████████████████████████████████████████████████████████████▊                          | 3/4 [00:00<00:00,  7.34it/s]
