@@ -8,11 +8,9 @@ ARG AWS_SECRET_ACCESS_KEY
 
 
 
-#this envs are experimental
+#env variables
 ENV AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
     AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
-
-
 
 # install requirements
 RUN pip install "dvc[s3]"
