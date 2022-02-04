@@ -8,6 +8,9 @@ jobs:
     defaults:
       run:
         working-directory: ./week_7_ecr
+    permissions:
+      id-token: write
+      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@v2
