@@ -3,3 +3,4 @@
 ['remote "model-store"']
     url = s3://lakeformation-demo-yogender/MLOps/fe/
     profile = bittoo
+    credentialpath = /home/yogender/.aws/credentials
