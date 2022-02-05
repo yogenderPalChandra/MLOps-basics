@@ -1,5 +1,5 @@
 [core]
     remote = model-store
 ['remote "model-store"']
-    url = s3://lakeformation-demo-yogender/MLOps/
+    url = s3://lakeformation-demo-yogender/MLOps/fe/
     profile = bittoo
