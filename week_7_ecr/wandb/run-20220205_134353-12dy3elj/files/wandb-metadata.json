@@ -1,0 +1,22 @@
+{
+    "os": "Linux-5.4.0-97-generic-x86_64-with-glibc2.17",
+    "python": "3.8.12",
+    "heartbeatAt": "2022-02-05T12:43:54.684732",
+    "startedAt": "2022-02-05T12:43:53.812256",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "week_7_ecr/train.py",
+    "git": {
+        "remote": "https://github.com/yogenderPalChandra/MLOps-basics.git",
+        "commit": "880d5cd99ef07b16f86bb9776fc50070c907e7ab"
+    },
+    "email": "yogender027mae@gmail.com",
+    "root": "/home/yogender/Desktop/KaggleHousePricePrediction/RavirajMlOps/MLOps-Basics",
+    "host": "yogender-HP-Spectre-x360-Convertible-13-ap0xxx",
+    "username": "yogender",
+    "executable": "/home/yogender/miniconda3/envs/MLOps/bin/python3"
+}
